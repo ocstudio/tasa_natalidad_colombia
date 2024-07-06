@@ -7,18 +7,17 @@ mortalidad = [5.35, 5.35, 5.26, 5.18, 5.13, 5.07, 5.02, 4.99, 4.95, 4.91, 4.92, 
 
 # Crear gráfico de líneas
 plt.figure(figsize=(10, 6))
-plt.plot(años, natalidad, marker='o', linestyle='-', color='b', label='Tasa de natalidad')
-plt.plot(años, mortalidad, marker='o', linestyle='-', color='r', label='Tasa de mortalidad')
+plt.plot(años, natalidad, marker='o', linestyle='-', color='m', label='Tasa de natalidad')
+plt.plot(años, mortalidad, marker='o', linestyle='-', color='c', label='Tasa de mortalidad')
 
 # Etiquetas y título
 plt.xlabel('Año')
 plt.ylabel('Tasa')
-plt.title('Tasa de Natalidad y Mortalidad en Colombia (2000-2022)')
+plt.title('Tasa de Natalidad y Mortalidad en Colombia Siglo XXI')
 plt.legend()
 plt.grid(True)
 
 # Ajustar los ticks del eje X para mostrar cada año
 plt.xticks(años)
-
 # Mostrar gráfico
 plt.show()
